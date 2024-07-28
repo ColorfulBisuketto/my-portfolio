@@ -1,8 +1,46 @@
+import React from 'react';
+import Navigation from './Navigation.js'
+
+function Hero(props) {
+  return (
+    <div className="Hero navElement" id={props.id}>
+      Hero
+    </div>
+  );
+}
+
+function AboutMe(props) {
+  return (
+    <div className="AboutMe navElement" id={props.id}>
+      About
+    </div>
+  );
+}
+
+function Projects(props) {
+  return (
+    <div className="Projects navElement" id={props.id}>
+      Projects
+    </div>
+  );
+}
+
+function Contact(props) {
+  return (
+    <div className="Contact navElement" id={props.id}>
+      Contact
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-      <p>this works just fine if you ask me...</p>
+      <Hero id="Home" />
+      <Navigation id="Navigation" />
+      <AboutMe id="About" />
+      <Projects id="Projects" />
+      <Contact id="Contact" />
     </div>
   );
 }
