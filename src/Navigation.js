@@ -24,6 +24,10 @@ function Navigation(props) {
           </a>
         )})}
       </ul>
+      <button onClick={() => {props.theme=='theme-dark' ?
+         props.setTheme('theme-light') : props.setTheme('theme-dark')}}>
+        theme
+      </button>
     </nav>
   );
 }

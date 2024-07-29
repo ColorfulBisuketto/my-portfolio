@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState , useEffect } from 'react';
 import Navigation from './Navigation.js';
 import './App.css';
 
@@ -35,10 +35,12 @@ function Contact(props) {
 }
 
 function App() {
+  const [theme, setTheme] = useState('theme-dark');
+
   return (
-    <div className="App theme-dark">
+    <div className={`App ${theme}`}>
       <Hero id="Home" />
-      <Navigation id="Navigation" />
+      <Navigation id="Navigation" theme={theme} setTheme={setTheme} />
       <AboutMe id="About" />
       <Projects id="Projects" />
       <Contact id="Contact" />
