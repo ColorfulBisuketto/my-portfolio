@@ -1,0 +1,20 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+}
+
+.App.theme-light {
+    background-color: rgb(229, 231, 235);
+    color: rgb(0, 0, 0);
+}
+.App.theme-light a {
+    color: rgb(98, 0, 209);
+}
+
+.App.theme-dark {
+    background-color: rgb(47, 56, 79);
+    color: white;
+}
+.App.theme-dark a {
+    color: aqua;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import Navigation from './Navigation.js'
+import Navigation from './Navigation.js';
+import './App.css';
 
 function Hero(props) {
   return (
@@ -35,7 +36,7 @@ function Contact(props) {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App theme-dark">
       <Hero id="Home" />
       <Navigation id="Navigation" />
       <AboutMe id="About" />
