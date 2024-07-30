@@ -1,38 +1,11 @@
 import React, { useState , useEffect } from 'react';
-import Navigation from './Navigation.js';
 import './App.css';
 
-function Hero(props) {
-  return (
-    <div className="Hero navElement" id={props.id}>
-      Hero
-    </div>
-  );
-}
-
-function AboutMe(props) {
-  return (
-    <div className="AboutMe navElement" id={props.id}>
-      About
-    </div>
-  );
-}
-
-function Projects(props) {
-  return (
-    <div className="Projects navElement" id={props.id}>
-      Projects
-    </div>
-  );
-}
-
-function Contact(props) {
-  return (
-    <div className="Contact navElement" id={props.id}>
-      Contact
-    </div>
-  );
-}
+import Navigation from './Navigation.js';
+import Hero from './Hero.js';
+import AboutMe from './AboutMe.js';
+import Projects from './Projects.js';
+import Contact from './Contact.js';
 
 function App() {
   const [theme, setTheme] = useState('theme-dark');
