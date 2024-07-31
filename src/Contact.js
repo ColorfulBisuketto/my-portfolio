@@ -1,6 +1,8 @@
+import styles from './Contact.module.css';
+
 function Contact(props) {
   return (
-    <div className="Contact navElement" id={props.id}>
+    <div className={`${styles.Contact} navElement`} id={props.id}>
       Contact
     </div>
   );

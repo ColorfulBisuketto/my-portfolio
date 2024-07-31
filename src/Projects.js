@@ -1,6 +1,8 @@
+import styles from './Projects.module.css';
+
 function Projects(props) {
   return (
-    <div className="Projects navElement" id={props.id}>
+    <div className={`${styles.Projects} navElement`} id={props.id}>
       Projects
     </div>
   );

@@ -1,6 +1,8 @@
+import styles from './AboutMe.module.css';
+
 function AboutMe(props) {
   return (
-    <div className="AboutMe navElement" id={props.id}>
+    <div className={`${styles.AboutMe} navElement`} id={props.id}>
       About
     </div>
   );

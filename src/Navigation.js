@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Navigation.css';
+import styles from './Navigation.module.css';
 
 function Navigation(props) {
   const [navElements, setNavElements] = useState([]);
@@ -16,7 +16,7 @@ function Navigation(props) {
   }, []);
 
   return (
-    <nav className="Navigation" id={props.id}>
+    <nav className={`${styles.Navigation}`} id={props.id}>
       <ul>
         {navElements.map((element) => {return (
           <a href={`#${element.name}`} key={element.key}>
